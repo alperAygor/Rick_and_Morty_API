@@ -24,7 +24,6 @@ import axios from 'axios';
 const store = useStore();
 
 watchEffect(() => {
-    console.log(store.getEpisodeNumber)
     store.updateList("episode", store.getEpisodeNumber);
 });
 onMounted(async() => {
