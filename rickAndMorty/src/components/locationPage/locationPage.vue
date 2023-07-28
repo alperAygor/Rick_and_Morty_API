@@ -21,7 +21,6 @@ import { useStore } from '../../store/index';
 const store = useStore();
 watch(() => {
     store.updateList("location",store.getLocationNumber);
-    console.log(store.getLocationList)
 });
 onMounted(async () => {
     const response = await axios.get(store.getUrl + "location")
