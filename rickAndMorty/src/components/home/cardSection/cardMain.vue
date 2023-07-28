@@ -27,7 +27,6 @@ defineComponent({
 const store = useStore();
 watchEffect(() => {
     store.updateList("character",store.getPageNumber);
-    console.log(store.getCharList)
 });
 
 </script>
